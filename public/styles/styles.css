@@ -17,7 +17,17 @@ main{
 form legend{
     color:green;
 }
+h1, h2{
+    text-align: center;  
+}
 h1{
+    padding-top: 5rem;
+
+}
+h2{
+    font-size: 30px;
+}
+p{
     text-align: center;
 }
 
@@ -62,3 +72,73 @@ button{
     display: none;
 }
 
+
+
+#summary-div {
+    background-color: #f8f9fa;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.summary-title {
+    color: #2ecc71;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+
+#name-email,
+#order-details
+{
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+}
+
+#comments-div {
+    border-bottom: none;
+}
+
+
+#comment-message {
+    border-radius: 0.5rem;
+    background: white;
+    padding: 0.75rem;
+    color: #555;
+    font-style: italic;
+    height: 5rem;
+    border-left-style: solid;
+    border-left-color: #5a4be7;
+}
+
+
+#button-div {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+#button-div button {
+    font-weight: 600;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-align: center;
+}
+#printBTN{
+    color:#5a4be7;
+    background-color: white;
+    border-color: #5a4be7;
+}
+
+
+img{
+    height: 65px;
+    display: flex;
+    justify-self: center;
+}
