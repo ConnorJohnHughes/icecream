@@ -9,7 +9,7 @@ body{
 main{
     background-color:white;
     width: 60%;
-    padding: 0 1rem 10rem 1rem;
+    padding: 3rem 1rem 10rem 1rem;
     margin: 0 auto 2rem auto;
     border-radius: 2rem;
     flex-wrap:wrap-reverse;
@@ -89,26 +89,45 @@ button{
 }
 
 
-#name-email,
-#order-details
-{
-    margin-bottom: 1.5rem;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-    line-height: 2rem;
+.summary-title {
+    display: block;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 10px 0 6px 0;
 }
+
+.info-row {
+    display: flex;
+    align-items: center;
+    gap: 10rem;              
+    margin-bottom: 4px;
+    line-height: 2rem;
+    padding-left:3rem;
+}
+
+.info-row label {
+    width: 100px;          
+    font-weight: bold;
+}
+
+
 
 #comments-div {
     border-bottom: none;
+
+    
+}
+#comments{
+  
+    height: 2rem;
 }
 
 
 #comment-message {
     border-radius: 0.5rem;
     background: white;
-    padding: 0.75rem;
+    padding: 0.75rem 1rem 0 2rem;
+    margin-left: 2rem;
     color: #555;
     font-style: italic;
     height: 5rem;
@@ -129,6 +148,7 @@ button{
     border-radius: 0.5rem;
     cursor: pointer;
     text-align: center;
+    width: 30%;
 }
 #printBTN{
     color:#5a4be7;

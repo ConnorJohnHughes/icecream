@@ -4,39 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/styles/styles.css" rel="stylesheet">
+    <script src="js/ice-cream.js" defer></script>
     <title>Confirmation Page</title>
 </head>
 <body>
     <main>
-        <form id="confirm-form">
+        <form id="confirm-form" action="home" method="get">
             <img src="/images/Eo_circle_green_white_checkmark.svg.png" alt="green circle with white checkmar">
             <h2>Thank You For Your Order!</h2>
             <p>Your ice cream order has been confirmed</p>
 
             <div id="summary-div">
                
-                    <div id="name-email">
-                        <label for="personal-info" id="personal-info" class="summary-title">Personal Information</label>
-                        <label for="name" id="name">Name: </label>
-                        <label for="email" id="email">Email: </label>
+                <div id="name-email">
+                    <label class="summary-title">Personal Information</label>
+                    <div class="info-row">
+                        <label>Name:</label>
+                        <span><%= order.name %></span>
                     </div>
+                    <div class="info-row">
+                        <label>Email:</label>
+                        <span><%= order.email%></span>
+                    </div>
+                </div>
 
-                    <div id="order-details">
-                        <label for="order" id="order" class="summary-title">Order Details</label>
-                        <label for="flavor" id="flavor">Flavor: </label>
-                        <label for="cone" id="cone">Cone Type: </label>
-                        <label for="toppings" id="toppings">Toppings: </label>
+                <div id="order-details">
+                    <label class="summary-title">Order Details</label>
+                    <div class="info-row">
+                        <label>Flavor:</label>
+                        <span><%= order.flavor%></span>
                     </div>
+                    <div class="info-row">
+                        <label>Cone Type:</label>
+                        <span><%=order.method%></span>
+                    </div>
+                    <div class="info-row">
+                        <label>Toppings:</label>
+                        <span><%=order.toppings%></span>
+                    </div>
+                </div>
+
 
                     <div id="comments-div">
                         <label for="comments" id="comments" class="summary-title">Additional Comments</label>
                         <div id="comment-message">
+                                <span><%=order.comments%></span>
 
                         </div>
                     </div>
 
                     <div id="button-div">
                         <button id="printBTN">Print Order</button>
+    
                         <button id="anotherBTN"> Place Another Order</button>
                     </div>
                

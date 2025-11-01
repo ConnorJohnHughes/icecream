@@ -1,4 +1,3 @@
-// alert("Hello, ice cream")
 
 
 document.getElementById('icecream-form').onsubmit= () => {
@@ -10,7 +9,6 @@ document.getElementById('icecream-form').onsubmit= () => {
         let email = document.getElementById('email').value.trim();
 
         if (!name){
-            // alert("No name ")
               document.getElementById('err-name').style.display = "block";
               isValid = false;
         };
