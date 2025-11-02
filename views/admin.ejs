@@ -11,14 +11,12 @@
 
     <link rel="stylesheet" href="//cdn.datatables.net/2.3.4/css/dataTables.dataTables.min.css">
     
-    <script>
+    <!-- <script defer>
         document.addEventListener("DOMContentLoaded", () => {
             new DataTable('#order-table');
         });
-    </script>
-    <!-- <script defer>
-        let table = new DataTable('#order-table');
     </script> -->
+    
     <link rel="stylesheet" href="/styles/styles.css">
 
 
@@ -59,7 +57,9 @@
             </tbody>
         </table>
     <main>
-
+    <script defer>
+        let table = new DataTable('#order-table');
+    </script>
 
 </body>
 </html>
