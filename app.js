@@ -38,7 +38,7 @@ app.get('/', (req,res) =>{
     res.render('home');
 
 });
-app.post('/submit-form', async(req,res) =>{
+app.post('/confirm', async(req,res) =>{
    
     try{
         const order = req.body;
@@ -82,20 +82,20 @@ app.get('/home', (req,res) =>{
     res.render('home');
 
 });
-// app.post('/submit-form', (req, res) => {
+app.post('/submit-form', (req, res) => {
 
 
 
-//     const order = req.body;
-//     order.timestamp = new Date().toLocaleDateString();
+    const order = req.body;
+    order.timestamp = new Date().toLocaleDateString();
 
 
-//     orders.push(order);
-//     console.log(orders);
+    orders.push(order);
+    console.log(orders);
 
  
-//     res.render('confirmation', { order });
-// });
+    res.render('confirmation', { order });
+});
 
 app.listen(PORT,() =>{
     console.log(`Server is running at http://localhost:${PORT}`)
